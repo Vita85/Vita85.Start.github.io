@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #74c69d;
+}
+header .header-wrapper {
+  padding: 35px 130px 82px;
+}
+header .header-wrapper .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+header .header-wrapper .nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+header .header-wrapper .nav .logo .logo-img {
+  width: 70px;
+}
+header .header-wrapper .nav .logo .logo-text {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.nav-menu.visible {
+  display: block;
+}
+.nav-menu.visible .nav-list {
+  display: flex;
+  gap: 30px;
+}
+.nav-menu.visible .nav-list .dropdown-item {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  cursor: pointer;
+  list-style: none;
+}
+.nav-menu.visible .nav-list .dropdown-item:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-menu.hidden {
+  display: none;
+}
+.nav-menu.hidden .dropdown-menu {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.nav-menu.hidden .dropdown-menu .dropdown-item {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  cursor: pointer;
+  list-style: none;
+  padding: 0;
+}
+
+.header-promo {
+  display: flex;
+  gap: 120px;
+}
+.header-promo .promo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 40px 0;
+}
+.header-promo .promo-text .promo-subtitle {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.header-promo .promo-text .promo-title {
+  color: #ffffff;
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+.header-promo .promo-text .header-subscribe {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+.header-promo .promo-text .header-btn {
+  color: #000000;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  width: 170px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 13px 0px;
+}
+.header-promo .promo-text .header-btn:hover {
+  background-color: #74c69d;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.header-promo .promo-image .promo-img {
+  width: 644px;
+}
+
+main {
+  flex-grow: 1;
+}
+main .main-wrapper {
+  padding: 60px 130px 54px;
+}
+main .main-wrapper .partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px;
+}
+main .main-wrapper .partners .partners-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+main .main-wrapper .partners .partners-text .partners-subtitle {
+  color: #74c69d;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+main .main-wrapper .partners .partners-text .partners-title {
+  color: #000000;
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+main .main-wrapper .partners .partners-text .partners-subscribe {
+  color: #000000;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+main .main-wrapper .partners .partners-image {
+  display: flex;
+  gap: 68px;
+}
+main .main-wrapper .partners .partners-btn {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  border: 1px solid #212529;
+  border-radius: 5px;
+  background: #212529;
+  padding: 13px 29px;
+}
+main .main-wrapper .partners .partners-btn:hover {
+  background: #ffffff;
+  color: #212529;
+}
+main .main-wrapper .main-promo-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 110px;
+  margin-top: 73px;
+  margin-bottom: 73px;
+}
+main .main-wrapper .main-promo-first .main-image .main-img {
+  width: 600px;
+}
+main .main-wrapper .main-promo-first .main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+main .main-wrapper .main-promo-first .main-text .main-title {
+  color: #000000;
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+main .main-wrapper .main-promo-first .main-text .main-subscribe {
+  color: rgba(33, 37, 41, 0.5);
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+main .main-wrapper .main-promo-first .main-text .main-btn {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  border: 1px solid #212529;
+  border-radius: 5px;
+  background: #212529;
+  padding: 13px 29px;
+}
+main .main-wrapper .main-promo-first .main-text .main-btn:hover {
+  background: #ffffff;
+  color: #212529;
+}
+main .main-wrapper .main-promo-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 110px;
+  margin-bottom: 102px;
+}
+main .main-wrapper .main-promo-second .main-image .main-img {
+  width: 600px;
+}
+main .main-wrapper .main-promo-second .main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+main .main-wrapper .main-promo-second .main-text .main-title {
+  color: #000000;
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+main .main-wrapper .main-promo-second .main-text .main-subscribe {
+  color: rgba(33, 37, 41, 0.5);
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+main .main-wrapper .main-promo-second .main-text .main-btn {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  border: 1px solid #212529;
+  border-radius: 5px;
+  background: #212529;
+  padding: 13px 29px;
+}
+main .main-wrapper .main-promo-second .main-text .main-btn:hover {
+  background: #ffffff;
+  color: #212529;
+}
+main .main-wrapper .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+main .main-wrapper .team .team-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+main .main-wrapper .team .team-text .team-subtitle {
+  color: #74c69d;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+main .main-wrapper .team .team-text .team-title {
+  color: #212529;
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+main .main-wrapper .team .team-text .team-subscribe {
+  width: 410px;
+  text-align: center;
+  color: #000000;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+main .main-wrapper .team .carousel-inner {
+  align-content: center;
+  text-align: center;
+  padding: 10px 5px;
+}
+main .main-wrapper .team .carousel-inner .persons {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+main .main-wrapper .team .carousel-inner .persons .person {
+  width: 260px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+  padding: 20px 38px;
+}
+main .main-wrapper .team .carousel-inner .persons .person .caption {
+  text-align: start;
+}
+main .main-wrapper .team .carousel-inner .persons .person .caption .person-name {
+  color: #212529;
+  font-family: "Crimson Text", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  margin-top: 19px;
+  margin-bottom: 17px;
+}
+main .main-wrapper .team .carousel-inner .persons .person .caption .person-pos {
+  color: rgba(33, 37, 41, 0.75);
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+main .main-wrapper .team .carousel-control-prev {
+  justify-content: start;
+}
+main .main-wrapper .team .carousel-control-prev-icon {
+  background-image: url(/icons/prev.png);
+}
+main .main-wrapper .team .carousel-control-next {
+  justify-content: end;
+  margin-right: 1px;
+}
+main .main-wrapper .team .carousel-control-next-icon {
+  background-image: url(/icons/next.png);
+}
+main .main-wrapper .team .main-btn {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  border: 1px solid #212529;
+  border-radius: 5px;
+  background: #212529;
+  padding: 13px 29px;
+}
+main .main-wrapper .team .main-btn:hover {
+  background: #ffffff;
+  color: #212529;
+}
+main .main-wrapper .accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+main .main-wrapper .accordion .accordion-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-wrapper .accordion .accordion-text .accordion-title {
+  color: #000000;
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+main .main-wrapper .accordion .accordion-text .accordion-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+}
+main .main-wrapper .accordion .accordion-text .accordion-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 57px;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-subscribe {
+  color: #000000;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  width: 410px;
+  text-align: center;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-section {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  width: 50%;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-form .form-label {
+  color: #000000;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-form .form-control {
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background: #eee;
+  margin-top: 11px;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-form .form-control:focus {
+  box-shadow: none;
+  border-color: black;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-form .resize {
+  resize: none;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-form .submit {
+  border-radius: 5px;
+  border: 1px solid #212529;
+  background: #212529;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-form .submit:hover {
+  border: 1px solid #212529;
+  background: #ffffff;
+  color: #212529;
+}
+main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-map {
+  width: 50%;
+}
+
+footer {
+  background-color: #74c69d;
+}
+footer .footer-wrapper {
+  padding: 50px 131px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-wrapper .social-icons {
+  display: flex;
+  gap: 20px;
+}
+footer .footer-wrapper .copy {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+@media (max-width: 500px) {
+  .nav-menu.visible {
+    display: none;
+  }
+  .nav-menu.hidden {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    width: 375px;
+  }
+  header .header-wrapper {
+    padding: 17px 20px 40px;
+  }
+  header .header-wrapper .nav {
+    margin-bottom: 32px;
+  }
+  header .header-wrapper .nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  header .header-wrapper .nav .logo .logo-img {
+    width: 45px;
+  }
+  header .header-wrapper .nav .logo .logo-text {
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+  }
+  header .header-wrapper .nav .nav-section .nav-menu.hidden .dropdown-menu {
+    text-align: end;
+  }
+  header .header-promo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  header .header-promo .promo-text {
+    order: 1;
+    padding: 0;
+  }
+  header .header-promo .promo-text .promo-title {
+    color: #ffffff;
+    font-family: "Crimson Text", serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  header .header-promo .promo-image .promo-img {
+    width: 335px;
+    order: 0;
+  }
+  main .main-wrapper {
+    padding: 22px 20px 39px;
+  }
+  main .main-wrapper .partners .partners-text {
+    text-align: center;
+    width: 280px;
+  }
+  main .main-wrapper .partners .partners-text .partners-title {
+    color: #000000;
+    font-family: "Crimson Text", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  main .main-wrapper .partners .partners-image {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  main .main-wrapper .main-promo-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  main .main-wrapper .main-promo-first .main-image .main-img {
+    width: 335px;
+  }
+  main .main-wrapper .main-promo-first .main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  main .main-wrapper .main-promo-first .main-text .main-title {
+    color: #000000;
+    font-family: "Crimson Text", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  main .main-wrapper .main-promo-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  main .main-wrapper .main-promo-second .main-text {
+    order: 1;
+  }
+  main .main-wrapper .main-promo-second .main-text .main-title {
+    color: #000000;
+    font-family: "Crimson Text", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  main .main-wrapper .main-promo-second .main-image .main-img {
+    width: 335px;
+    order: 0;
+  }
+  main .main-wrapper .team .team-text .team-title {
+    color: #212529;
+    font-family: "Crimson Text", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  main .main-wrapper .team .team-text .team-subscribe {
+    width: 330px;
+  }
+  main .main-wrapper .team .carousel-inner .persons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .main-wrapper .accordion .accordion-text .accordion-title {
+    color: #000000;
+    font-family: "Crimson Text", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  main .main-wrapper .accordion .accordion-collapse .accordion-body {
+    flex-direction: column;
+    gap: 37px;
+  }
+  main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-subscribe {
+    width: 300px;
+  }
+  main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-form {
+    width: 100%;
+    order: 1;
+  }
+  main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-map {
+    order: 0;
+    width: 100%;
+  }
+  main .main-wrapper .accordion .accordion-collapse .accordion-body .contact-map .map-img {
+    width: 100%;
+  }
+  footer .footer-wrapper {
+    padding: 31px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
