@@ -6,14 +6,8 @@
   }
 }
 
-@mixin laptop() {
-  @media (max-width: $breakpoint_l) {
-    @content;
-  }
-}
-
 @mixin tablet() {
-  @media (max-width: $breakpoint_md) {
+  @media (max-width: $breakpoint_l) {
     @content;
   }
 }

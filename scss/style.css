@@ -532,7 +532,7 @@ footer .footer-wrapper .copy {
   line-height: 125%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .nav-menu.visible {
     display: none;
   }
@@ -540,9 +540,9 @@ footer .footer-wrapper .copy {
     display: block;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   body {
-    width: 375px;
+    width: 500px;
   }
   header .header-wrapper {
     padding: 17px 20px 40px;
@@ -585,6 +585,10 @@ footer .footer-wrapper .copy {
     font-style: normal;
     font-weight: 700;
     line-height: 125%;
+  }
+  header .header-promo .promo-image {
+    display: flex;
+    justify-content: center;
   }
   header .header-promo .promo-image .promo-img {
     width: 335px;

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@100..900&display=swap");
 @import "./variables.scss";
 @import "./media.scss";
-@import "./extends.scss";
 @import "./mixins.scss";
 
 * {
@@ -42,7 +41,7 @@ header {
             normal,
             500,
             125%
-          )
+          );
         }
       }
     }
@@ -603,10 +602,11 @@ footer {
   .nav-menu.hidden {
     display: block;
   }
+
 }
 @include mobile {
   body {
-    width: 375px;
+    width: 500px;
   }
   header {
     .header-wrapper {
@@ -661,6 +661,8 @@ footer {
         }
       }
       .promo-image {
+        display: flex;
+        justify-content: center;
         .promo-img {
           width: 335px;
           order: 0;
@@ -668,7 +670,7 @@ footer {
       }
     }
   }
-  
+
   main {
     .main-wrapper {
       padding: 22px 20px 39px;
