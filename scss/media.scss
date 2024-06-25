@@ -1,13 +1,25 @@
 @import "./variables.scss";
 
-@mixin desktop() {
+@mixin large() {
   @media (max-width: $breakpoint_xxl) {
     @content;
   }
 }
 
-@mixin tablet() {
+@mixin desktop() {
+  @media (max-width: $breakpoint_xl) {
+    @content;
+  }
+}
+
+@mixin laptop() {
   @media (max-width: $breakpoint_l) {
+    @content;
+  }
+}
+
+@mixin tablet () {
+  @media (max-width: $breakpoint_m) {
     @content;
   }
 }

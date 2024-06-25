@@ -17,36 +17,37 @@
       <div class="header-wrapper">
         <div class="nav">
           <div class="logo">
-            <img src="./icons/logo.svg" alt="Logo" class="logo-img" />
-            <span class="logo-text">Start</span>
+            <img src="./icons/logo.svg" alt="" class="logo-img" />
+            <p class="logo-text">Start</p>
           </div>
 
-          <div class="nav-section">
-            <div class="nav-menu visible">
-              <ul class="nav-list">
-                <li class="dropdown-item">Home</li>
-                <li class="dropdown-item">Portfolio</li>
-                <li class="dropdown-item">Services</li>
-                <li class="dropdown-item">Contact</li>
-              </ul>
-            </div>
+          <div class="menu-list">
+            <ul class="menu-items">
+              <li class="menu-item">Home</li>
+              <li class="menu-item">Portfolio</li>
+              <li class="menu-item">Services</li>
+              <li class="menu-item">Contact</li>
+            </ul>
+          </div>
 
-            <div class="nav-menu hidden">
-              <button
-                class="border-0 bg-transparent"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="./icons/burger.svg" alt="" />
-              </button>
-              <ul class="dropdown-menu">
-                <li class="dropdown-item">Home</li>
-                <li class="dropdown-item">Portfolio</li>
-                <li class="dropdown-item">Services</li>
-                <li class="dropdown-item">Contact</li>
-              </ul>
-            </div>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./icons/burger.svg" alt="" class="nav-img"/>
+          
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="menu-item dropdown-item">Home</li>
+              <li class="menu-item dropdown-item">Portfolio</li>
+              <li class="menu-item dropdown-item">Services</li>
+              <li class="menu-item dropdown-item">Contact</li>
+            </ul>
           </div>
         </div>
 
@@ -61,14 +62,14 @@
             </p>
             <button class="header-btn">Explore</button>
           </div>
-          <div class="promo-image">
-            <img
-              class="promo-img"
-              src="./image/logo-group.svg"
-              alt="Promo image"
-            />
-          </div>
+
+          <img
+            class="promo-img"
+            src="./image/logo-group.svg"
+            alt="Promo image"
+          />
         </div>
+
       </div>
     </header>
 
@@ -79,7 +80,7 @@
             <div class="partners-subtitle">partners</div>
             <h2 class="partners-title">Lorem Ipsum Dolor</h2>
             <p class="partners-subscribe">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit.
             </p>
           </div>
 
@@ -96,8 +97,13 @@
 
         <div class="main-promo-first">
           <div class="main-image">
-            <img src="./image/group-1.svg" alt="Group" class="main-img" />
+            <img
+              src="./image/group-1.svg"
+              alt="Group"
+              class="main-img responsive-image"
+            />
           </div>
+
           <div class="main-text">
             <h2 class="main-title">Lorem ipsum dolor sit amet consectetur</h2>
             <p class="main-subscribe">
@@ -119,8 +125,13 @@
             </p>
             <button class="main-btn">Learn More</button>
           </div>
+
           <div class="main-image">
-            <img src="./image/group-2.svg" alt="Group" class="main-img" />
+            <img
+              src="./image/group-2.svg"
+              alt="Group"
+              class="main-img responsive-image"
+            />
           </div>
         </div>
 
@@ -138,69 +149,65 @@
             <div class="carousel-inner">
               <div class="carousel-item carousel-item-1 active">
                 <div class="persons">
-                  <div class="person team1">
+                  <div class="person">
                     <img src="./image/person-1.svg" alt="" />
-                    <div class="caption">
-                      <p class="person-name">Peg Legge</p>
-                      <p class="person-pos">CEO</p>
-                    </div>
+                    <p class="person-name">Peg Legge</p>
+                    <p class="person-pos">CEO</p>
                   </div>
-                  <div class="person team2">
+
+                  <div class="person">
                     <img src="./image/person-2.svg" alt="" />
-                    <div class="caption">
-                      <p class="person-name">Richard Guerra</p>
-                      <p class="person-pos">CTO</p>
-                    </div>
+
+                    <p class="person-name">Richard Guerra</p>
+                    <p class="person-pos">CTO</p>
                   </div>
-                  <div class="person team3">
+
+                  <div class="person">
                     <img src="./image/person-3.svg" alt="" />
-                    <div class="caption">
-                      <p class="person-name">Alexandra Stolz</p>
-                      <p class="person-pos">DESIGNER</p>
-                    </div>
+
+                    <p class="person-name">Alexandra Stolz</p>
+                    <p class="person-pos">DESIGNER</p>
                   </div>
-                  <div class="person team4">
+
+                  <div class="person">
                     <img src="./image/person-4.svg" alt="" />
-                    <div class="caption">
-                      <p class="person-name">Janet Bray</p>
-                      <p class="person-pos">DEVELOPER</p>
-                    </div>
+
+                    <p class="person-name">Janet Bray</p>
+                    <p class="person-pos">DEVELOPER</p>
                   </div>
                 </div>
               </div>
+
               <div class="carousel-item carousel-item-2">
                 <div class="persons">
-                  <div class="person team1">
+                  <div class="person">
                     <img src="./image/person-1.svg" alt="" />
-                    <div class="caption">
-                      <p class="person-name">Peg Legge</p>
-                      <p class="person-pos">CEO</p>
-                    </div>
+
+                    <p class="person-name">Peg Legge</p>
+                    <p class="person-pos">CEO</p>
                   </div>
-                  <div class="person team2">
+                  <div class="person">
                     <img src="./image/person-2.svg" alt="" />
-                    <div class="caption">
-                      <p class="person-name">Richard Guerra</p>
-                      <p class="person-pos">CTO</p>
-                    </div>
+
+                    <p class="person-name">Richard Guerra</p>
+                    <p class="person-pos">CTO</p>
                   </div>
-                  <div class="person team3">
+                  <div class="person">
                     <img src="./image/person-3.svg" alt="" />
-                    <div class="caption">
-                      <p class="person-name">Alexandra Stolz</p>
-                      <p class="person-pos">DESIGNER</p>
-                    </div>
+
+                    <p class="person-name">Alexandra Stolz</p>
+                    <p class="person-pos">DESIGNER</p>
                   </div>
-                  <div class="person team4">
+                  <div class="person">
                     <img src="./image/person-4.svg" alt="" />
-                    <div class="caption">
-                      <p class="person-name">Janet Bray</p>
-                      <p class="person-pos">DEVELOPER</p>
-                    </div>
+
+                    <p class="person-name">Janet Bray</p>
+                    <p class="person-pos">DEVELOPER</p>
                   </div>
                 </div>
               </div>
             </div>
+
             <button
               class="carousel-control-prev"
               type="button"
@@ -247,8 +254,9 @@
           >
             <div class="accordion-body">
               <p class="contact-subscribe">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit.
               </p>
+
               <div class="contact-section">
                 <div class="contact-form">
                   <div>
@@ -275,13 +283,12 @@
                   <button type="submit" class="submit">Submit</button>
                 </div>
 
-                <div class="contact-map">
-                  <img src="./image/map.svg" alt="" class="map-img" />
-                </div>
+                <img src="./image/map.svg" alt="" class="map-img" />
               </div>
             </div>
           </div>
         </div>
+        
       </div>
     </main>
 
@@ -296,6 +303,7 @@
           <img src="./icons/wats.svg" alt="" class="footer-icon" />
           <img src="./icons/yt.svg" alt="" class="footer-icon" />
         </div>
+
         <div class="copy">
           <span>&copy; Start, 2022.</span>
           <span>All rights reserved.</span>
